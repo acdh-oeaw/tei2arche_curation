@@ -1,0 +1,52 @@
+/* fluid 5 columns for masonry = Metadata column */
+/*                                               */
+/* clear fix */
+/* ---- isotope ---- */
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid{
+    margin-top: 1em;
+    padding: .2em;
+}
+.grid-item,
+.grid-sizer {
+    width: 47.5%;
+}
+.grid-item {
+  float: left;
+  margin: .5em;
+}
+.grid-item > * {
+  margin: 0;
+  padding: 0;
+}
+.grid-item a{
+    text-transform: uppercase;
+}
+.grid-dl{
+    border: 1px solid;
+/*    border-color: #88dbdf;*/
+    border-radius: 5px;
+    margin: 0;
+    height: 650px;
+    overflow-y: auto;
+    padding: .5em;
+}
+.grid-item dl:hover {
+  background: #eee;
+}
+.grid-item dl dd h5{
+    text-transform: capitalize;
+}
+@media only screen and (max-width: 1024px){   
+    .grid-item {
+        width: 100%;
+    }
+    .CV-info{
+        width:100%;
+    }
+}
